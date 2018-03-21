@@ -1,4 +1,12 @@
 /**
  * This is my stylesheet, there are many like it but this one is mine.
  */
-html,body {}
+html,body {
+  font-family:monospace;
+  margin:0;
+  padding:0;
+}
+div#main {
+  margin:5em auto;
+  max-width:500px;
+}
