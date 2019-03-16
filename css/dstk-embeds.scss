@@ -1,0 +1,178 @@
+@import url("https://use.typekit.net/rku4qhr.css");
+.embed-character {
+  background-color:transparent;
+  color:#fff;
+  // font-family:"urw-din-condensed",sans-serif;
+  font-weight:300;
+  height:200px;
+  position:relative;
+  text-shadow:0 2px 5px rgba(0, 0, 0, 0.5);
+  width:470px;
+  .xp { display:none; }
+  .status {
+    font-size:2rem;
+    position:absolute;
+    top:1.75rem;
+    opacity:0.25;
+    left:1rem;
+    .fa-circle { display:none; }
+  }
+  .persona {
+    padding:1.5rem 1rem 0;
+    position:relative;
+    .name {
+      font-family:interstate-compressed, sans-serif;
+      font-weight:800;
+      font-style:normal;
+      font-size:52px;
+      line-height:48px;
+      text-align:center;
+      text-transform:uppercase;
+    }
+    .sentence {
+      font-family: interstate-compressed, sans-serif;
+      font-weight: 500;
+      font-size:26px;
+      font-style: normal;
+      text-align:center;
+      text-transform:uppercase;
+      em {
+        font-style:normal;
+      }
+      &:before {
+        content:'Is ';
+      }
+    }
+  }
+  .stats {
+    display:flex;
+    & > div { flex:1; }
+    div.stat {
+      padding:1rem 0;
+      text-align:center;
+      // &:nth-child(1) .stat-name:after { content:'MIGHT'; }
+      // &:nth-child(2) .stat-name:after { content:'SPEED'; }
+      // &:nth-child(3) .stat-name:after { content:'INT'; }
+    }
+    .stat-wrapper {
+      display:inline-block;
+      margin:0 auto;
+      padding-right:5rem;
+      position:relative;
+      width:auto;
+    }
+    .stat-name {
+      font-family: interstate-compressed, sans-serif;
+      font-size:22px;
+      font-weight: 800;
+      font-style: normal;
+      line-height:24px;
+      position:absolute;
+      left:4.5rem;
+      text-align:left;
+      text-transform:uppercase;
+      top:0;
+      // span { display:none; }
+    }
+    .stat-current {
+      font-family: interstate-condensed, sans-serif;
+      font-weight: 800;
+      font-style: normal;
+      font-size:64px;
+      line-height:48px;
+      text-align:center;
+      width:4rem;
+    }
+    .stat-max {
+      bottom:0;
+      font-family: interstate-compressed, sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size:24px;
+      left:4.5rem;
+      line-height:24px;
+      position:absolute;
+      right:0;
+      text-align:left;
+      width:4rem;
+      &:before {
+        content:'of';
+        display:inline-block;
+        margin-right:0.5rem;
+        font-family: kepler-std-semicondensed,serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size:24px;
+      }
+    }
+  }
+  .rolls {
+    background-color:#555;
+    border-radius:0.25rem;
+    box-sizing:border-box;
+    bottom:0;
+    font-family: kepler-std-semicondensed,serif;
+    font-weight: 400;
+    font-size:24px;
+    font-style: italic;
+    left:0;
+    line-height:80px;
+    margin:5px;
+    position:absolute;
+    right:0;
+    text-align:center;
+    text-shadow:none;
+    top:110px;
+    span.dice { font-weight:500; }
+    span[class^="result"] {
+      font-family: interstate-compressed, sans-serif;
+      font-weight: 800;
+      font-style: normal;
+      background-color:#fff;
+      border:1px solid transparent;
+      border-radius:1.5rem;
+      color:#000;
+      display:inline-block;
+      font-weight:500;
+      height:2.5rem;
+      line-height:2.5rem;
+      text-align:center;
+      width:2.5rem;
+    }
+    span.result-1,span.result-20 { border:3px solid #999; }
+    span.result-18,span.result-19 { border:3px dashed #999; }
+  }
+}
+.embed-player {
+  width:470px;
+  font-weight:300;
+  background-color:transparent;
+  text-shadow:0 2px 5px rgba(0, 0, 0, 0.5);
+  color:#fff;
+  .social {
+    display:none;
+    // display:flex;
+    // font-size:22px;
+    // padding:0.5rem 0.5rem 1rem;
+    // & > div {
+    //   flex:1;
+    //   text-align:center;
+    // }
+  }
+  .name {
+    font-family:interstate-compressed, sans-serif;
+    font-weight:800;
+    font-style:normal;
+    font-size:52px;
+    line-height:48px;
+    text-align:center;
+    text-transform:uppercase;
+    &:before {
+      content:'GM';
+      font-family: interstate-compressed, sans-serif;
+      font-weight: 200;
+      font-style: normal;
+      margin-right:10px;
+    }
+  }
+}
